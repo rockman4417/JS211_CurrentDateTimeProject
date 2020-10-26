@@ -3,13 +3,61 @@
   <head>
     <meta charset="utf-8">
     <title></title>
-    <script src="main.js"></script>
+    <link rel="stylesheet" href="style.css">
+    
   </head>
   <body>
-    <h1>Hello World!</h1>
-    <hr/>
-    <div id="display-element"></div>
-    <button onclick="displayDate()">Click Me</button>
-    <hr/>
+    
+    <div class="main-wrapper">
+      <h1>Random Functions!</h1><hr/>
+      <div class="date"><p>CLICK THE BUTTON TO DISPAY THE DATE</p>
+        <div id="display-element-date"></div>
+        <button type="button" class="glow-on-hover" onclick="displayDate()">SHOW DATE</button>
+        </div>
+      
+      <hr/>
+      <p>INPUT A NUMBER TO CONVERT TO STRING</p>
+      <div><textarea id="display-element-to-string"></textarea></div>
+      
+      <button type="button" class="glow-on-hover" onclick="convertToString()">CONVERT</button>
+      <p id="string-display"></p>
+      <hr/>
+  
+      
+      <p>INPUT A STRING TO CONVERT TO NUMBER</p>
+      <div><textarea id="display-element-to-number"></textarea></div>
+      
+      <button  type="button" class="glow-on-hover"onclick="convertToNumber()">CONVERT</button>
+      <p id="number-display"></p>
+      <hr/>
+  
+      
+      <p>INPUT A VALUE TO SHOW THE DATA TYPE</p>
+      <div><textarea id="type-of-input"></textarea></div>
+      
+      <button type="button" class="glow-on-hover" onclick="showTypeOf()">SHOW TYPE</button>
+      <p id="type-of-display"></p>
+      <hr/>
+  
+      
+      <p>INPUT TWO NUMBERS TO ADD THEM</p>
+      <div><textarea id="addTwo-input1"></textarea><textarea id="addTwo-input2"></textarea></div>
+      
+      <button type="button" class="glow-on-hover" onclick="addTwo()">ADD</button>
+      <p id="addTwo-display"></p>
+      <hr/>
+      
+      <p>CHECK OR UNCHECK THE BOXES TO SEE WHETHER THEY'RE CHECKED!</p>
+      <div>Checkbox: <input type="checkbox" id="myCheck1" onclick="isChecked()">
+        <p id="text1" style="display:none">First Thing True</p></div>
+  
+      <div>Checkbox: <input type="checkbox" id="myCheck2" onclick="isChecked()">
+        <p id="text2" style="display:none">Second Thing True</p></div>
+      
+      
+      <p id="check-booleans-display"></p>
+      <hr/></div>
+    
+    <script src="main.js"></script>
   </body>
 </html>
